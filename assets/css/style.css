@@ -1,0 +1,38 @@
+.nav-es{
+ 
+     background-color: #450363;
+    
+}
+
+.fondo{
+   width: 100%;      
+   height: auto;   
+ 
+
+}
+
+
+.mi_imagen{
+    width: 2;
+    height: 1;
+  
+}
+
+.fondo-personalizado {
+  background-image: url('../img/fondo_1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;
+}
+
+.footer-es{
+ 
+    background-color: #450363;
+    display:flex;
+   justify-content: space-between; 
+   align-items: center;
+   padding: 1rem;
+   text-align: center;
+}
+  
