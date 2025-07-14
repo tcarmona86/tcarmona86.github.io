@@ -30,9 +30,14 @@
  
     background-color: #450363;
     display:flex;
-   justify-content: space-between; 
+   justify-content:space-between; 
    align-items: center;
    padding: 1rem;
    text-align: center;
 }
   
+.text-footer{
+  color: rgb(199, 190, 190);
+  font-size: 18px;
+  margin-right: 8px; 
+}
