@@ -1,7 +1,12 @@
 .nav-es{
  
-     background-color: #450363;
+     background-color: #120220;
     
+}
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link.active {
+  background-color: #3e044d;
+  color: white;
 }
 
 .fondo{
@@ -29,19 +34,9 @@
 
 .footer-es{
  
-    background-color: #450363;
-    display:flex;
-   justify-content:space-between; 
-   align-items: center;
-   padding: 1rem;
-   text-align: center;
+   background-color: #120220;
 }
   
-.text-footer{
-  color: rgb(250, 248, 248);
-  font-size: 18px;
-  margin-right: 8px; 
-}
 
 #goTop {
   position: fixed;

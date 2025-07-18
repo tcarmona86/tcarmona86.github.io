@@ -17,38 +17,42 @@
 <body data-bs-spy="scroll" data-bs-target="#goTop" data-bs-offset="80" tabindex="0">
     <div id="topbar" class="topbar"></div>
 
-  <nav class="navbar navbar-expand-lg nav-es navbar-dark fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="./index.html">
-        <img src="./assets/img/Logo.png" alt="" width="86" style="height: 100%;">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav nav-tabs">
-          <li class="nav-item"><a class="nav-link" href="#resumen-c">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#sec-exp">Experiencia</a></li>
-          <li class="nav-item"><a class="nav-link" href="#sec-edu">Educación</a></li>
-          <li class="nav-item"><a class="nav-link" href="./portafolio.html">Portafolio</a></li>
-        </ul>
-      </div>
+<nav class="navbar navbar-expand-lg nav-es navbar-dark fixed-top">
+  <div class="container-fluid">
+    <!-- Barra superior-->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav nav-tabs">
+        <li class="nav-item"><a class="nav-link" href="#resumen-c">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#sec-exp">Experiencia</a></li>
+        <li class="nav-item"><a class="nav-link" href="#sec-edu">Educación</a></li>
+        <li class="nav-item"><a class="nav-link" href="./portafolio.html">Portafolio</a></li>
+      </ul>
     </div>
-  </nav>
-  <div class="fondo-personalizado  justify-content-center align-items-center text-black">
+    <a class="navbar-brand ms-auto" href="./index.html">
+      <img src="./assets/img/Logo.png" alt="" width="86" style="height: 100%;">
+    </a>
+  </div>
+</nav>
+<!-- Fondo -->  
+<div class="fondo-personalizado  justify-content-center align-items-center text-black">
 <div class="fondo-personalizado justify-content-start align-items-start text-black">
+  <!--Header-->
   <header id="Hero-Section" class="text-light text-start py-5 mt-5">
     <div class="container ms-0">
       <div class="col-12 col-md-7">
-        <h1 class="display-1 fw-bold my-5">
+        <h1 class="display-1 fw-bold my-5 m-4">
           Teresa<br>Carmona
         </h1>
-        <p class="my-5">
-          Ingeniera en informática, especializada en la gestión de proyectos a través de metodologías
+        <p class="my-5 m-4">
+          Soy Ingeniera en informática, especializada en la gestión de proyectos a través de metodologías
           tradicionales y ágiles. En esta última, certificada como Scrum Master y Product Owner. Cuento con 10 años de
           experiencia como jefa de proyectos y 17 años ejerciendo mi profesión, desempeñando cargos como soporte,
-          analista, QA, jefa de proyecto y encargada de sistemas.
+          analista, QA, jefa de proyecto y encargada de sistemas y proximamente desarrolladora
+          <i class="fa-regular fa-face-laugh-squint"></i>
         </p>
       </div>
     </div>
@@ -118,7 +122,6 @@
                       </div>
                     </div>
                   </div>
-
                   <!-- Scrum Master -->
                   <div class="col-12 col-lg-4">
                     <div class="card" style="width: 18rem;">
@@ -130,7 +133,6 @@
                       </div>
                     </div>
                   </div>
-
                   <!-- Kanban Essentials -->
                   <div class="col-12 col-lg-4">
                     <div class="card" style="width: 18rem;">
@@ -142,7 +144,6 @@
                       </div>
                     </div>
                   </div>
-
                   <!-- Universidad Inacap -->
                   <div class="col-12 col-lg-4">
                     <div class="card" style="width: 18rem;">
@@ -162,32 +163,25 @@
       </div>
     </div>
   </div>
-
-  <footer>
-    <div class="footer-es">
-      <img src="./assets/img/Logo.png" alt="Logo Black" width="86" style="height: 100%;">
-      <div class="text-footer text-footer"><i class="fa-brands fa-linkedin"></i>&nbsp;tcarmonaramos</div>
-      <div class="text-footer text-footer"><i class="fa-brands fa-github"></i></i>&nbsp;tcarmona86</div>
-      <div class="text-footer text-footer"><i class="fa-brands fa-instagram"></i>&nbsp;padfo0t</div>
-      <div class="text-footer text-footer"><i class="fa-brands fa-x-twitter"></i>&nbsp;padfo0t</div>
-      <div class="text-footer text-footer"><i class="fa-brands fa-google"></i>&nbsp;tcarmona86@gmail.com</div>
-    </div>
-  </footer>
-
-
-       <div id="goTop">
+    <!-- Volver arriba -->
+     <div id="goTop">
       <a href="#topbar" id="goTopbtn"><i class="fa-solid fa-chevron-up" style="color: #0f0f0e;"></i></a>
      </div>
-
-     <script>
-      const goTopbtn = document.getElementById("goTopbtn");
-      window.addEventListener("scroll", function () {        
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      <script>
+      let goTopbtn = document.getElementById("goTopbtn");
+      window.onscroll = function () {
+        scrollFunction();
+      };
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) { 
           goTopbtn.style.display = "flex";
         } else {
           goTopbtn.style.display = "none";
         }
-      });
+      }
     </script>
+       <footer class="footer-es text-center text-light p-4">
+        <p class="mb-0">Diseñado por &copy 2025 Teresa Carmona</p>
+    </footer>
 </body>
 </html>
