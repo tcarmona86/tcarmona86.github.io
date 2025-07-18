@@ -11,12 +11,13 @@
 
 }
 
-
-.mi_imagen{
-    width: 2;
-    height: 1;
-  
+#Hero-Section {  
+  background-image: url("../img/Banner5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
 }
+
 
 .fondo-personalizado {
   background-image: url('../img/Fondo_3.png');
