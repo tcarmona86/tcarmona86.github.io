@@ -57,8 +57,9 @@ border-bottom: 1px solid #E8EBE4;
 .contactos{
     display: flex;
     align-items: center;
-    padding: 5px;
     gap: 10px;    
+    border-bottom: 1px solid #E8EBE4;
+    width: 100%;
 }
 
 .contactos img{
@@ -66,9 +67,13 @@ border-bottom: 1px solid #E8EBE4;
     height: 60px; 
     border-radius: 50%; 
     object-fit: cover;
-    padding: 5px;
+    
 }
 
+.contactos .row{
+    width: 100%;
+    border-bottom: 1px solid #E8EBE4;
+}
 
 
 .main {
