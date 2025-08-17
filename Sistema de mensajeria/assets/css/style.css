@@ -60,16 +60,22 @@ border-bottom: 1px solid #E8EBE4;
     gap: 10px;    
     border-bottom: 1px solid #E8EBE4;
     width: 100%;
+
+
 }
 
 .contactos img{
-    width: 60px; 
-    height: 60px; 
+    width: 50px; 
+    height: 50px; 
     border-radius: 50%; 
     object-fit: cover;
+    margin: 5px;
     
 }
 
+.contactos p{
+    padding: 5px;
+}
 .contactos .row{
     width: 100%;
     border-bottom: 1px solid #E8EBE4;
@@ -88,4 +94,8 @@ border-bottom: 1px solid #E8EBE4;
   max-width: 150px;
   margin-bottom: 20px;
   padding: 15px;
+}
+.container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
