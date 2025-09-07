@@ -77,7 +77,6 @@ nav a:hover {
   gap: 10px;
 }
 
-
 .menu-left ul {
   list-style: none;
   
@@ -98,11 +97,6 @@ nav a:hover {
   gap: 8px;
   font-weight:lighter;
   font-size: 14px;
-}
-
-.filtro {
-  padding-bottom: 10px;
-  padding-top: 3px;
 }
 
 .menu-item ul{
@@ -186,28 +180,9 @@ footer .RSS {
     font-weight: normal;
   }
 
-  .menu-toggle {
-    display: none;
-  }
-
   .cards {
     grid-template-columns: 1fr 1fr;
   }
-
-.filtro {
-  background-color: #f0f0f0; /* gris */
-  padding: 10px 20px;        /* padding interno */
-  margin: 0;                 /* sin margen externo */
-  width: 100vw;              /* ancho total de la ventana */
-  box-sizing: border-box;    /* incluye padding en el ancho */
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-}
-
-
 
   footer {
     grid-area: footer;
@@ -260,9 +235,7 @@ footer .RSS {
     .cards {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    .menu-toggle{
-    display: block !important;
-    }
+
 }
 
 .card {
