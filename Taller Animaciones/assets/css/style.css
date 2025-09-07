@@ -46,6 +46,7 @@ nav {
   text-align: left;
   text-decoration: none;
   
+  
 }
 
 nav span{
@@ -75,6 +76,7 @@ nav a:hover {
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
+  
 }
 
 .menu-left ul {
@@ -114,7 +116,7 @@ main {
 
 footer {
   text-align: center;
-  color: #031c4d;
+  color: #446d4e;
   padding-top: 10px;
 
 }
@@ -205,7 +207,7 @@ footer .RSS {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    
   }
   nav .menu-left ul{
     color: white;
@@ -257,6 +259,11 @@ footer .RSS {
   object-fit: cover;
 }
 
+.card img:hover {
+  transform: scale(1.15);
+  transition: transform 0.3s all;
+}
+
 .card-body {
   display: flex;
   flex-direction: column;
@@ -273,7 +280,7 @@ footer .RSS {
 }
 
 .card button {
-  background: #031c4d;
+  background: #446d4e;
   color: white;
   border: none;
   padding: 8px;
@@ -282,35 +289,5 @@ footer .RSS {
 }
 
 .card button:hover {
-  background: #00256e;
+  background: #446d4e;
 }
-
-
-.pagination-container {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.pagination {
-  display: inline-block;
-
-}
-
-.pagination a {
-  color: black;
-  float: left;
-  padding: 8px 16px;
-  text-decoration: none;
-  transition: background-color .3s;
-  border: 1px solid #ddd;
-}
-
-.pagination a.active {
-  background-color: #00256e;
-  color: white;
-  border: 1px solid #00256e;
-}
-
-.pagination a:hover:not(.active) {background-color: #ddd;}
-
-
