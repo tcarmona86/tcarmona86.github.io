@@ -1,7 +1,7 @@
 <h2>Talleres</h2>
 
 <h3>Taller Animaciones</h3>
-<p>https://tcarmona86.github.io/Electric%20Car%20Store/</p>
+<p>https://tcarmona86.github.io/Taller%20Animaciones/</p>
 
 
 <h3>Electric Cars</h3>
