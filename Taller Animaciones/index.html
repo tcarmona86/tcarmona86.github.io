@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,99 +7,114 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://kit.fontawesome.com/f83b754c9a.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
     <nav>
         <div class="menu-left">
             <!-- Logo -->
             <div class="logo">
-                <img src="./assets/img/Logo.png" alt="">
+                <img src="./assets/img/Logo.png" alt="Logo Jardines Urbanos">
                 <span>Urbanos</span>
             </div>
             <!-- Menu-->
             <div class="menu-item">
                 <ul>
-                    <li><a href="#"></i>Inicio</a></li>
-                    <li><a href="#"></i>Catálogo</a></li>
-                    <li><a href="#"></i>Ofertas</a></li>
-                    <li><a href="#"></i>Contacto</a></li>
+                    <li><a href="#casa">En Terrenos</a></li>
+                    <li><a href="#edificio">En Altura</a></li>
+                    <li><a href="#otros">Otros Jardines</a></li>
+                    <li><a href="https://mail.google.com/">Contacto</a></li>
                 </ul>
             </div>
+        </div> <!-- 👈 faltaba cerrar este div -->
     </nav>
     <!-- Galeria Jardines-->
     <main>
-        <div class="cards">
-            <!-- Tarjeta 1 -->
-            <div class="card">
-                <img src="./assets/img/jardin.jpg" alt="">
-                <div class="card-body">
-                    <h3>Jardin Exterior</h3>
-                    <p>Para Terrenos de 50mt2</p>
+        <section id="casa">
+            <h2>Jardines en Terrenos</h2>
+            <div class="cards">
+                <!-- Tarjeta 1 -->
+                <div class="card">
+                    <img src="./assets/img/jardin.jpg" alt="Jardin Exterior">
+                    <div class="card-body">
+                        <h3>Jardin Exterior</h3>
+                        <p>Para Terrenos de 50mt2</p>
+                    </div>
+                    <button>Cotiza Aquí</button>
                 </div>
-                <button>Cotiza Aquí</button>
-            </div>
-            <!-- Tarjeta 2 -->
-            <div class="card">
-                <img src="./assets/img/jardin2.jpg" alt="">
-                <div class="card-body">
-                    <h3>Jardin Exterior con Estanque</h3>
-                    <p>Para Terrenos Superiores a 50mt2</p>
+                <!-- Tarjeta 2 -->
+                <div class="card">
+                    <img src="./assets/img/jardin2.jpg" alt="Jardin Exterior con Estanque">
+                    <div class="card-body">
+                        <h3>Jardin Exterior con Estanque</h3>
+                        <p>Para Terrenos Superiores a 50mt2</p>
+                    </div>
+                    <button>Cotiza Aquí</button>
                 </div>
-                <button>Cotiza Aquí</button>
             </div>
-            <!-- Tarjeta 3 -->
-            <div class="card">
-                <img src="./assets/img/jardin3.jpg" alt="">
-                <div class="card-body">
-                    <h3>Jardin Exterior en Terrazas</h3>
-                    <p>Matenimiento de Jardin Exitente</p>
+        </section>
+        <section id="edificio">
+            <h2>Jardines en Altura</h2>
+            <div class="cards">
+                <!-- Tarjeta 3 -->
+                <div class="card">
+                    <img src="./assets/img/jardin3.jpg" alt="Jardin en Terraza">
+                    <div class="card-body">
+                        <h3>Jardin Exterior en Terrazas</h3>
+                        <p>Mantenimiento de Jardín Existente</p>
+                    </div>
+                    <button>Cotiza Aquí</button>
                 </div>
-                <button>Cotiza Aquí</button>
-            </div>
-            <!-- Tarjeta 4 -->
-            <div class="card">
-                <img src="./assets/img/jardin4.jpg" alt="">
-                <div class="card-body">
-                    <h3>Jardin Exterior en Azotea</h3>
-                    <p>Con Instalación de Macetas y Auto Riego</p>
+                <!-- Tarjeta 4 -->
+                <div class="card">
+                    <img src="./assets/img/jardin4.jpg" alt="Jardin en Azotea">
+                    <div class="card-body">
+                        <h3>Jardin Exterior en Azotea</h3>
+                        <p>Con Instalación de Macetas y Auto Riego</p>
+                    </div>
+                    <button>Cotiza Aquí</button>
                 </div>
-                <button>Cotiza Aquí</button>
-            </div>
-            <!-- Tarjeta 5 -->
-            <div class="card">
-                <img src="./assets/img/jardin5.jpg" alt="">
-                <div class="card-body">
-                    <h3>Jardin Exterior en Terrazas</h3>
-                    <p>Con Instalación de Macetas y Auto Riego</p>
+                <!-- Tarjeta 5 -->
+                <div class="card">
+                    <img src="./assets/img/jardin5.jpg" alt="Jardin en Terraza con Macetas">
+                    <div class="card-body">
+                        <h3>Jardin Exterior en Terrazas</h3>
+                        <p>Con Instalación de Macetas y Auto Riego</p>
+                    </div>
+                    <button>Cotiza Aquí</button>
                 </div>
-                <button>Cotiza Aquí</button>
             </div>
-            <!-- Tarjeta 6 -->
-            <div class="card">
-                <img src="./assets/img/jardin6.jpg" alt="">
-                <div class="card-body">
-                    <h3>Jardin Vertical</h3>
-                    <p>Decorativo o Huerta</p>
+        </section>
+        <section id="otros">
+            <h2>Otros Tipos de Jardines</h2>
+            <div class="cards">
+                <!-- Tarjeta 6 -->
+                <div class="card">
+                    <img src="./assets/img/jardin6.jpg" alt="Jardin Vertical">
+                    <div class="card-body">
+                        <h3>Jardin Vertical</h3>
+                        <p>Decorativo o Huerta</p>
+                    </div>
+                    <button>Cotiza Aquí</button>
                 </div>
-                <button>Cotiza Aquí</button>
-            </div>
-            <!-- Tarjeta 7 -->
-            <div class="card">
-                <img src="./assets/img/jardin7.jpg" alt="">
-                <div class="card-body">
-                    <h3>Jardin Interior o de Luz</h3>
-                    <p>Cerrado o Abierto</p>
+                <!-- Tarjeta 7 -->
+                <div class="card">
+                    <img src="./assets/img/jardin7.jpg" alt="Jardin Interior">
+                    <div class="card-body">
+                        <h3>Jardin Interior o de Luz</h3>
+                        <p>Cerrado o Abierto</p>
+                    </div>
+                    <button>Cotiza Aquí</button>
                 </div>
-                <button>Cotiza Aquí</button>
             </div>
-        </div>
+        </section>
     </main>
     <footer>
-        <div class="RSS">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-square-facebook"></i>
-        </div>
-        <p>Todos los derechos reservados</p>
+        <section id="footer">
+            <div class="RSS">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+            </div>
+            <p>Todos los derechos reservados</p>
+        </section>
     </footer>
 </body>
 </html>
