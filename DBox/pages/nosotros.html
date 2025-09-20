@@ -14,43 +14,95 @@
   <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 <body>
-    <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-            <img src="../assets/img/logo.png" alt="" width="192" height="70" style="padding-left: 10px;" class="d-inline-block align-text-top"></a>
-            <ul class="nav nav-tabs">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="servicios.html">Servicios</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="trabaja-con-nosotros.html">Trabaja con Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <header id="Hero-Section" class="text-light text-start py-5 mt-5">
-    <div class="container ms-0">
-      <div class="col-12 col-md-7">
-        <h1 class="display-1 fw-bold my-5 m-4">
-          -DIGITBOX-
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="../assets/img/logo.png" alt="Logo" width="155" height="48" style="padding-left: 10px;" class="d-inline-block align-text-top">
+    </a>
+
+    <!-- Botón hamburguesa -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menú colapsable -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="../index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/nosotros.html">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/servicios.html">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/trabaja-con-nosotros.html">Trabaja con Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <header id="nuestra-Section" class="text-light text-center py-3 mt-3">
+    <div class="container">
+      <div class="row justify-content-center">  
+      <div class="col-12 col-md-8">
+        <h1 class="fw-bold my-3 m-4">
+          Nuestra <span style="color: rgb(22, 7, 105);">Empresa</span></h2> 
         </h1>
-        <p class="my-5 m-4">
-          Servicios de Tecnología, Innovación y Negocios
-          <i class="fa-regular fa-face-laugh-squint"></i>
-        </p>
       </div>
     </div>
   </header>
-    <main></main>
-    <footer></footer>
+<main>
+<section id="bienvenida" class="my-3">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Texto a la izquierda -->
+      <div class="col-md-6 text-start">
+        <p>
+          En DIGITBOX, transformamos cada requerimiento en una solución de alto nivel. Nuestra empresa nace con el
+          compromiso de entregar un servicio atento, responsable y personalizado. Cada proyecto se desarrolla en 
+          conjunto con nuestros clientes, adaptándonos a sus necesidades y especificaciones para garantizar 
+          resultados óptimos y competitivos.<br><br>
+          Más que un proveedor, somos tu equipo confiable. Nuestros profesionales están capacitados para resolver tus 
+          dudas con rapidez y precisión, entregando soluciones que elevan tu gestión. Al confiar en nosotros, no solo 
+          obtienes resultados: incorporas un equipo humano experimentado, comprometido y listo para acompañarte en 
+          cada desafío.
+        </p>
+      </div>
+
+      <!-- Imagen a la derecha -->
+      <div class="col-md-6 mb-3">
+        <img src="../assets/img/nosotros2.png" alt="Nosotros DBOX" class="img-fluid">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+<a href="https://wa.me/+56944400394?text=Hola%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n." 
+   class="whatsapp-float" target="_blank" aria-label="Chatea en WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+    <footer>
+      <div class="container text-start py-3">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <h5 class="fw-bold">Contáctanos</h5>
+            <p><i class="fa-solid fa-phone"></i> Teléfono: +56 2 2220 6471</p>
+            <p><i class="fa-solid fa-envelope"></i> Email: contacto@digitbox.cl</p>
+            <p><i class="fa-solid fa-map-marker-alt"></i> Dirección: Badajoz N° 100, Oficina 523, Las Condes. Santiago</p>
+        <p>&copy; 2025 DBOX. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
     </body>
 </html>
