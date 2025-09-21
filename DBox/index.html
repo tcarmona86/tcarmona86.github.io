@@ -4,154 +4,141 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digit Box</title>
+
+  <!-- Fuentes y estilos -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
-  <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-  <title>Digit Box</title>
+  <link rel="stylesheet" href="assets/css/style.css">
   <script src="https://kit.fontawesome.com/f83b754c9a.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbar">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="./assets/img/logo.png" alt="Logo" width="155" height="48" style="padding-left: 10px;" class="d-inline-block align-text-top">
-    </a>
-
-    <!-- Botón hamburguesa -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Menú colapsable -->
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link active" href="index.html">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./pages/servicios.html">Servicios</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://dbox.trabajando.cl/">Trabaja con Nosotros</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-        </li>
-      </ul>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./assets/img/logo.png" alt="Logo"  height="48" class="d-inline-block align-text-top" style="padding-left: 10px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pages/nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pages/servicios.html">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://dbox.trabajando.cl/">Trabaja con Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
-    <header id="Hero-Section" class="text-light text-center py-3 mt-3">
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="Hero-Section" class="text-light text-center py-5 mt-5">
     <div class="container">
-      <div class="row justify-content-center">  
-      <div class="col-12 col-md-8">
-        <h1 class=" fw-bold my-3 m-4">
-          -DBOX-
-        </h1>
-        <h1 class="fw-bold my-3 m-4">
-          Servicios de Tecnología, Innovación y Negocios
-        </h1>
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8">
+          <h1 class="fw-bold mb-3">–DBOX–</h1>
+          <h2 class="fw-bold">Servicios de Tecnología, Innovación y Negocios</h2>
+        </div>
       </div>
     </div>
   </header>
-    <main>
-    <section id="bienvenida" class="my-3">  
-      <div class="container">    
+
+  <!-- Bienvenida -->
+  <main>
+    <section id="bienvenida" class="my-5">
+      <div class="container">
         <div class="row align-items-center">
-          <div class="col-md-6 mb-3">       
-            <img src="./assets/img/002002.png" alt="Equipo DBOX" class="img-fluid">      
-          </div>      
-          <div class="col-md-6 text-start">        
-            <h2 class="fw-bold mb-3">Bienvenidos a <span style="color: rgb(22, 7, 105);">DBOX</span></h2>        
-            <p>En DBOX, conectamos empresas con soluciones inteligentes en consultoría, hunting, subcontratación
-          y selección de profesionales especializados en Tecnología y Administración. Nos destacamos por ofrecer un servicio 
-          confiable, cercano y de alto nivel, respaldado por un equipo altamente capacitado que entiende tus desafíos y 
-          responde con eficacia y compromiso. Cada cliente recibe una atención personalizada, adaptada a sus necesidades 
-          específicas, porque creemos que el éxito se construye con relaciones sólidas y resultados concretos.</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="compromiso" class="text-light text-center py-3 mt-3">
-    <div class="container">
-      <div class="row justify-content-center">      
-        <div class="col-12 col-md-8">        
-          <h1 class="fw-bold mb-3">
-          Comprometidos con nuestra labor
-          </h1>
-          <p class="my-3">
-          En DBOX, entregamos soluciones confiables y personalizadas, respaldadas por un equipo experto y una 
-          gestión que protege lo más importante: tu información.
-          </p>
-      </div>
-    </div>
-  </section>
-  <!--Sección acerca-->
-  <div class="acerca">  
-  <section class="text-center m-4" id="sec-edu">    
-    <div class="container">      
-      <h2 class="fw-bold mb-3">Acerca de <span style="color: rgb(22, 7, 105);">DBOX</span></h2> 
-      <div class="row justify-content-center gy-4">
-        <!-- Tarjeta 1 -->
-        <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <img src="./assets/img/1.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-title fw-bold">Tecnología</p>
-              <p class="card-text">La Tecnología se ha transformado en un apoyo fundamental, de los negocios del presente y futuro. Es por esto que buscamos soluciones de acuerdo a las necesidades de cada institución.</p>
-            </div>
+          <div class="col-md-6 mb-3">
+            <img src="./assets/img/002002.png" alt="Equipo DBOX" class="img-fluid">
+          </div>
+          <div class="col-md-6 text-start">
+            <h2 class="fw-bold mb-3">Bienvenidos a <span style="color: #383fa3;">DBOX</span></h2>
+            <p>En DBOX, conectamos empresas con soluciones inteligentes en consultoría, hunting, subcontratación y selección de profesionales especializados en Tecnología y Administración. Nos destacamos por ofrecer un servicio confiable, cercano y de alto nivel, respaldado por un equipo altamente capacitado que entiende tus desafíos y responde con eficacia y compromiso.</p>
+            <p>Cada cliente recibe una atención personalizada, adaptada a sus necesidades específicas, porque creemos que el éxito se construye con relaciones sólidas y resultados concretos.</p>
           </div>
         </div>
-        <!-- Tarjeta 2 -->
-        <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <img src="./assets/img/2.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-title fw-bold">Innovación</p>
-              <p class="card-text">Sin la innovación, no podríamos adaptarnos al constante cambio que necesitamos para mantenernos activos y con aportes de valor en los diferentes ámbitos de nuestro entorno.</p>
-            </div>
+      </div>
+    </section>
+
+    <!-- Compromiso -->
+    <section id="compromiso" class="text-light text-center py-5 bg-dark">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8">
+            <h2 class="fw-bold mb-3">Comprometidos con nuestra labor</h2>
+            <p>En DBOX, entregamos soluciones confiables y personalizadas, respaldadas por un equipo experto y una gestión que protege lo más importante: tu información.</p>
           </div>
         </div>
-        <!-- Tarjeta 3 -->
-        <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <img src="./assets/img/3.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-title fw-bold">Negocios</p>
-              <p class="card-text">Los negocios son parte de nuestras operaciones diarias, con el objetivo de obtener ganancias lucrativas o de beneficios. Nosotros apoyamos con nuestra experiencia a la creación o mejoramiento de estos nuevos negocios.</p>
+      </div>
+    </section>
+
+    <!-- Acerca de DBOX -->
+    <section id="sec-edu" class="text-center my-5">
+      <div class="container">
+        <h2 class="fw-bold mb-4">Acerca de <span style="color: rgb(22, 7, 105);">DBOX</span></h2>
+        <div class="row justify-content-center gy-4">
+          <!-- Tarjeta 1 -->
+          <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+              <img src="./assets/img/1.png" class="card-img-top" alt="Tecnología">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Tecnología</h5>
+                <p class="card-text">La tecnología es un apoyo fundamental para los negocios del presente y futuro. Buscamos soluciones adaptadas a cada institución.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Tarjeta 2 -->
+          <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+              <img src="./assets/img/2.png" class="card-img-top" alt="Innovación">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Innovación</h5>
+                <p class="card-text">La innovación nos permite adaptarnos al cambio y aportar valor en distintos ámbitos. Es clave para mantenernos activos y relevantes.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Tarjeta 3 -->
+          <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+              <img src="./assets/img/3.png" class="card-img-top" alt="Negocios">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Negocios</h5>
+                <p class="card-text">Apoyamos la creación y mejora de negocios con experiencia y visión estratégica, orientados a generar beneficios sostenibles.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  </div>
-    </main>
-<a href="https://wa.me/+56972102270?text=Hola%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n." 
-   class="whatsapp-float" target="_blank" aria-label="Chatea en WhatsApp">
-  <i class="fa-brands fa-whatsapp"></i>
-</a>
-    <footer>
-      <div class="container text-start py-3">
-        <div class="row">
-          <div class="col-md-4 mb-3">
-            <h5 class="fw-bold">Contáctanos</h5>
-            <p><i class="fa-solid fa-phone"></i> Teléfono: +56 2 2220 6471</p>
-            <p><i class="fa-solid fa-envelope"></i> Email: contacto@digitbox.cl</p>
-            <p><i class="fa-solid fa-map-marker-alt"></i> Dirección: Badajoz N° 100, Oficina 523, Las Condes. Santiago</p>
-        <p>&copy; 2025 DBOX. Todos los derechos reservados.</p>
-          </div>
+    </section>
+  </main>
+
+  <!-- WhatsApp flotante -->
+  <a href="https://wa.me/+56972102270?text=Hola%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n." 
+     class="whatsapp-float" target="_blank" aria-label="Chatea en WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-start py-4">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <h5 class="fw-bold">Contáctanos</h5>
+          <p><i class="fa-solid fa-phone"></i> Teléfono: +56 2 2220 6471</p>
+          <p><i class="fa-solid fa-envelope"></i> Email: contacto@digitbox.cl</p>
+          <p><i class="fa-solid fa-map-marker-alt"></i> Dirección: Badajoz N° 100, Oficina 523, Las Condes. Santiago</p>
+          <p>&copy; 2025 DBOX. Todos los derechos reservados.</p>
         </div>
       </div>
-    </footer>
-    </body>
+    </div>
+  </footer>
+</body>
 </html>
-
-
