@@ -91,6 +91,17 @@ body {
   background-color: #d8ddebb6;
 }
 
+#SEO {
+  text-align: center; /* Centra el texto */
+  padding: 20px; /* Espaciado opcional */
+}
+
+#SEO a {
+  text-decoration: none; /* Quita el subrayado */
+  color: #383fa3;
+  font-weight: 500; /* Opcional: mejora la visibilidad */
+}
+
 footer {
     background-color: #333;
     color: white;
@@ -122,3 +133,9 @@ footer p {
 .whatsapp-float:hover {
   opacity: 0.8;
 }
+
+
+.whatsapp-float:hover {
+  opacity: 0.8;
+}
+
