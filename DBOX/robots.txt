@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /cgi-bin/
+Disallow: /?s=
+Disallow: /search
+
+Allow: /wp-admin/admin-ajax.php
+
+Sitemap: https://digitbox.cl/sitemap.xml
