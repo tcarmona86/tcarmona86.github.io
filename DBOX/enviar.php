@@ -1,10 +1,10 @@
 <?php
-use PHPMailer\PHPMailer\PHPMailer;
+//use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'phpmailer/src/PHPMailer.php';
-require 'phpmailer/src/SMTP.php';
-require 'phpmailer/src/Exception.php';
+//require 'phpmailer/src/PHPMailer.php';
+//require 'phpmailer/src/SMTP.php';
+//require 'phpmailer/src/Exception.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $nombre = htmlspecialchars($_POST["nombre"]);
@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   try {
     // 🔐 Configuración SMTP de Titan
     $mail->isSMTP();
-    $mail->Host = 'smtp.titan.email';
+   // $mail->Host = 'smtp.titan.email';
     $mail->SMTPAuth = true;
     $mail->Username = 'contacto@digitbox.cl';
     $mail->Password = 'Contacto@2025';
