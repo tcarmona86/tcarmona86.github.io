@@ -5,6 +5,9 @@
 
 <h2>Talleres</h2>
 
+<p>Taller Calculo Total</p>
+<p>https://tcarmona86.github.io/Calculo_total/</p>
+
 <p>Taller Animaciones</p>
 <p>https://tcarmona86.github.io/Taller%20Animaciones/</p>
 
