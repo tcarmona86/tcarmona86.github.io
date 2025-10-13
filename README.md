@@ -5,6 +5,9 @@
 
 <h2>Talleres</h2>
 
+<p>Taller Condiciones</p>
+<p>https://tcarmona86.github.io/Desafio%20condiciones/</p>
+
 <p>Taller Calculo Total</p>
 <p>https://tcarmona86.github.io/Calculo_total/</p>
 
