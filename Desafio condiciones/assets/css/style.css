@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background-color: rgb(210, 162, 255);
+}
+
+.img1{
+  display: block;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.sbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"] {
+  margin-top: 10px;
+  width: 100px;
+  text-align: center;
+}
+
+.btn-s {
+  margin-top: 20px;
+  width: 100px;
+  text-align: center;
+}
+
+#mensaje {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.btn-select {
+  margin-top: 20px;
+  width: 100px;
+  text-align: center;
+}
+
+
