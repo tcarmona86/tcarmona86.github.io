@@ -6,7 +6,7 @@
 <h2>Talleres</h2>
 
 <p>Taller Funciones</p>
-<p>https://tcarmona86.github.io/funciones/</p>
+<p>https://tcarmona86.github.io/Funciones/</p>
 
 <p>Taller Condiciones</p>
 <p>https://tcarmona86.github.io/Desafio%20condiciones/</p>
