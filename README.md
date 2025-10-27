@@ -5,6 +5,9 @@
 
 <h2>Talleres</h2>
 
+<p>Taller Objetos y arreglos</p>
+<p>https://tcarmona86.github.io/Desafio_Inmobiliaria/</p>
+
 <p>Taller Funciones</p>
 <p>https://tcarmona86.github.io/Funciones/</p>
 
