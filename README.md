@@ -5,6 +5,9 @@
 
 <h2>Talleres</h2>
 
+<p>Taller Métodos de Arreglos</p>
+<p>https://tcarmona86.github.io/To_do_List/</p>
+
 <p>Taller Objetos y arreglos</p>
 <p>https://tcarmona86.github.io/Desafio_Inmobiliaria/</p>
 
