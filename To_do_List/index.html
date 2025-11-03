@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Desafio to do list</title>
+		<link rel="stylesheet" href="./Assets/css/style.css" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"	crossorigin="anonymous" />
+	</head>
+	<body>
+		<div class="container mt-5">
+			<h1 class="mb-4">Todo List</h1>
+			<div class="d-flex gap-2 mb-3">
+				<input type="text" id="nuevaTarea" class="form-control" placeholder="Nueva tarea" />
+				<button id="agregarTarea" class="btn btn-success">Agregar</button>
+			</div>
+			<div class="mb-3">
+				<p><strong>Total:</strong> <span id="cuenta-tareas">0</span></p>
+				<p><strong>Realizadas:</strong> <span id="tareas-realizadas">0</span></p>
+			</div>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Tarea</th>
+						<th>Realizada</th>
+						<th>Eliminar</th>
+					</tr>
+				</thead>
+				<tbody id="tareas"></tbody>
+			</table>
+		</div>
+		<script src="./Assets/js/index.js"></script>
+	</body>
+</html>
