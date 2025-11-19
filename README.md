@@ -6,7 +6,7 @@
 <h2>Talleres</h2>
 
 <p>Taller Conversor de Monedas</p>
-<p>https://tcarmona86.github.io/conversor/</p>
+<p>https://tcarmona86.github.io/Conversor/</p>
 
 <p>Taller Métodos de Arreglos</p>
 <p>https://tcarmona86.github.io/To_do_List/</p>
