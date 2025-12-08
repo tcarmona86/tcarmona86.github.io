@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.App {
+  margin: 0;
+  padding: 0;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar button {
+  padding: 0.5rem 1rem;
+  background-color: #222;
+  color: white;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  align-items: center;
+}
+
+.cart-total {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+}
+
+.header-banner {
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.hero-text h2 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+
+.cart-total {
+  font-weight: bold;
+}
+
+.header-banner img {
+  width: 100%;
+  height: 200px;
+  display: block;
+}
+
+.home {
+  padding: 2rem;
+  text-align: center;
+}
+
+.pizza-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.card-pizza {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 250px;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  min-height: 350px;
+}
+
+.pizza-img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.pizza-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto; 
+}
+
+.pizza-buttons button {
+  padding: 0.5rem 1rem;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pizza-buttons button:hover {
+  background-color: #e60000;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+    color: #000000;
+    background-color: #ffffff;
+    min-height: 100vh;
+}
+
+.container-register {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #000000;
+    margin-top: 2rem;
+}
+
+.register-form label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    
+}
+
+.register-form input {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+.register-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.register-button:hover {
+    background-color: #0056b3;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+    color: #000000;
+    background-color: #ffffff;
+    min-height: 100vh;
+}
+
+.container-login {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #000000;
+    margin-top: 2rem;
+}
+
+.login-form label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    
+}
+
+.login-form input {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+.login-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
