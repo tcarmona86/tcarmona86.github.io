@@ -5,8 +5,11 @@
 
 <h2>Talleres</h2>
 
+<p>Taller Pizzeria Mamma Mia Hito2</p>
+<p>https://github.com/tcarmona86/tcarmona86.github.io/tree/main/Hito%202_Pizzeria%20Mamma%20Mia</p>
+
 <p>Taller Pizzeria Mamma Mia Hito1</p>
-https://github.com/tcarmona86/tcarmona86.github.io/tree/main/Hito%201_Pizzeria%20Mamma%20Mia
+<p>https://github.com/tcarmona86/tcarmona86.github.io/tree/main/Hito%201_Pizzeria%20Mamma%20Mia</p>
 
 <p>Taller Conversor de Monedas</p>
 <p>https://tcarmona86.github.io/Conversor/</p>
