@@ -1,1 +1,1 @@
-Se incluye funcionaliad en botones de NavBar
+Se incluye funcionalidad en botones de NavBar
