@@ -438,3 +438,18 @@ footer .btn-primary {
   transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
+
+.value-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+.value-card:hover {
+  transform: scale(1.03);
+}
+.value-card .icon {
+  font-size: 2rem;
+  color: var(--bs-primary);
+  margin-bottom: 0.5rem;
+}
