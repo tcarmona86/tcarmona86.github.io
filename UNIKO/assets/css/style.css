@@ -1,0 +1,440 @@
+:root {
+  --unyko-primary: #1F6AE1;     /* Azul principal: confianza y profesionalismo */
+  --unyko-accent: #2FBF71;      /* Verde humano: cercanía y crecimiento */
+  --unyko-action: #F7941D;      /* Naranjo activo: energía y agilidad */
+  --unyko-text: #4A4A4A;        /* Gris oscuro: equilibrio y seriedad */
+  --unyko-bg-light: #f8fbff;
+  --unyko-bg-soft: #eef5ff;
+}
+
+/* Tipografía sugerida */
+body {
+  font-family: 'Inter', 'Poppins', 'Nunito', system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--unyko-text);
+}
+
+/* Navbar */
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  color: var(--unyko-primary);
+}
+.btn-outline-primary {
+  border-color: var(--unyko-primary);
+  color: var(--unyko-primary);
+}
+.btn-outline-primary:hover {
+  background: var(--unyko-primary);
+  color: #fff;
+}
+
+/* Botón principal con naranjo activo */
+.btn-primary {
+  background-color: var(--unyko-action);
+  border-color: var(--unyko-action);
+  color: #fff;
+}
+.btn-primary:hover {
+  background-color: #e67c0f;
+  border-color: #e67c0f;
+}
+
+/* Animación suave en botones */
+.btn {
+  transition: all 0.3s ease;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, var(--unyko-bg-light) 0%, var(--unyko-bg-soft) 100%);
+  padding: 7rem 0 5rem;
+}
+.hero h2 {
+  color: var(--unyko-primary);
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+.hero h1 {
+  font-size: 2.5rem;
+}
+.hero .lead {
+  font-size: 1.125rem;
+  color: var(--unyko-text);
+}
+.hero-cta {
+  margin-top: 2rem;
+}
+.hero-cta .btn {
+  min-width: 180px;
+}
+.hero-illustration img {
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+/* Section titles */
+.section-title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--unyko-primary);
+}
+.section-subtitle {
+  color: var(--unyko-text);
+  margin-bottom: 2rem;
+}
+
+/* Feature cards */
+.feature-card {
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  padding: 1.5rem;
+  height: 100%;
+  background: #fff;
+}
+.feature-card .icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--unyko-bg-soft);
+  color: var(--unyko-accent);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Services */
+.service-card {
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  padding: 1.5rem;
+  background: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+.service-card .icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--unyko-bg-soft);
+  color: var(--unyko-accent); /* Verde humano */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+
+/* Process */
+.process-step {
+  position: relative;
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  padding: 1.5rem;
+  height: 100%;
+  background: #fff;
+}
+.process-step .badge {
+  background: var(--unyko-accent);
+}
+
+/* Footer */
+footer {
+  background: #0f172a;
+  color: #e6edf3;
+}
+footer .btn-primary {
+  background: var(--unyko-action);
+  border: none;
+}
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.12);
+}
+
+/* Utilidades de color */
+.text-primary { color: var(--unyko-primary); }
+.text-accent { color: var(--unyko-accent); }
+.text-action { color: var(--unyko-action); }
+.text-muted { color: var(--unyko-text); }
+
+.bg-primary { background-color: var(--unyko-primary); }
+.bg-accent { background-color: var(--unyko-accent); }
+.bg-action { background-color: var(--unyko-action); }
+.bg-muted { background-color: var(--unyko-text); }
+
+/* Responsive */
+@media (max-width: 991.98px) {
+  .hero {
+    padding: 4rem 0 2rem;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+  .hero-cta {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.quienes-somos-section {
+  background: var(--unyko-bg-light);
+  padding: 6rem 2rem;
+}
+
+.quienes-somos-section .section-title {
+  font-size: 2.5rem;
+  color: var(--unyko-primary);
+  margin-bottom: 1rem;
+}
+
+.quienes-somos-section .section-subtitle {
+  font-size: 1.2rem;
+  color: var(--unyko-text);
+  margin-bottom: 3rem;
+}
+
+.team-photo img {
+  max-width: 720px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.highlight-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.highlight-box h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.highlight-box p {
+  font-size: 1rem;
+  color: var(--unyko-text);
+}
+
+.value-card {
+  background: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.value-card .icon {
+  font-size: 2rem;
+  color: var(--unyko-accent);
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.value-card h6 {
+  color: var(--unyko-primary);
+  margin-bottom: 0.5rem;
+}
+
+.value-card p {
+  color: var(--unyko-text);
+  font-size: 0.9rem;
+}
+
+
+.quienes-somos-banner {
+  background: linear-gradient(135deg, var(--unyko-bg-light) 0%, var(--unyko-bg-soft) 100%);
+}
+
+.quienes-somos-banner h2 {
+  font-size: 2.25rem;
+}
+
+.quienes-somos-banner p {
+  font-size: 1.1rem;
+  color: var(--unyko-text);
+}
+
+.quienes-somos-banner .text-accent {
+  color: var(--unyko-accent);
+}
+
+.quienes-somos-banner .text-action {
+  color: var(--unyko-action);
+}
+
+.quienes-somos-banner .btn {
+  min-width: 180px;
+  transition: all 0.3s ease;
+}
+
+.quienes-somos-banner .btn-primary {
+  background-color: var(--unyko-action);
+  border-color: var(--unyko-action);
+  color: #fff;
+}
+
+.quienes-somos-banner .btn-primary:hover {
+  background-color: #e67c0f;
+  border-color: #e67c0f;
+}
+
+.quienes-somos-banner .btn-outline-primary {
+  border-color: var(--unyko-primary);
+  color: var(--unyko-primary);
+}
+
+.quienes-somos-banner .btn-outline-primary:hover {
+  background-color: var(--unyko-primary);
+  color: #fff;
+}
+
+.quienes-somos-img img {
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 320px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  backface-visibility: hidden;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.flip-card-front .icon {
+  font-size: 2rem;
+  color: var(--unyko-accent);
+  margin-bottom: 1rem;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  color: var(--unyko-text);
+}
+.diferenciador-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.diferenciador-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+.diferenciador-card img {
+  max-height: 120px;
+  object-fit: contain;
+}
+.diferenciador-card h5 {
+  margin-bottom: 1rem;
+}
+.diferenciador-card p {
+  font-size: 0.95rem;
+}
+
+#nosotros .section-title {
+  font-size: 2rem;
+  color: var(--unyko-primary);
+}
+
+#nosotros h4 {
+  font-size: 1.25rem;
+  color: var(--unyko-primary);
+}
+
+.value-card {
+  background: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+.value-card .icon {
+  font-size: 1.5rem;
+  color: var(--unyko-accent);
+  margin-bottom: 0.5rem;
+}
+.value-card h6 {
+  color: var(--unyko-primary);
+}
+.value-card p {
+  font-size: 0.85rem;
+  color: var(--unyko-text);
+}
+
+.cta-final {
+  background: var(--unyko-primary); /* Azul corporativo */
+  padding: 5rem 2rem;
+}
+
+.cta-final h2 {
+  font-size: 2rem;
+}
+
+.cta-final p {
+  font-size: 1.2rem;
+  max-width: 720px;
+  margin: 0 auto 2rem;
+}
+
+.btn-action {
+  background-color: var(--unyko-action); /* Naranjo activo */
+  border: none;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-action:hover {
+  background-color: #e67c0f; /* tono más oscuro al hover */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
