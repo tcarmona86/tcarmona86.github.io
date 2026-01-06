@@ -31,7 +31,7 @@ body {
 }
 .nav-link:hover {
   color: var(--unyko-accent);
-  text
+
 }
 
 /* Botones */
@@ -191,16 +191,18 @@ footer a:hover {
 
 /* Tarjetas giratorias */
 .flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 320px;
   perspective: 1000px;
-  height: 100%;
 }
 
 .flip-card-inner {
   position: relative;
   width: 100%;
   height: 100%;
+  transition: transform 0.8s ease;
   transform-style: preserve-3d;
-  transition: transform 0.6s ease;
 }
 
 .flip-card:hover .flip-card-inner {
@@ -210,20 +212,116 @@ footer a:hover {
 .flip-card-front,
 .flip-card-back {
   position: absolute;
-  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
   backface-visibility: hidden;
   background: #fff;
-  border: 1px solid #e9ecef;
-  border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
   padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
   text-align: center;
+}
+
+.flip-card-front .icon {
+  font-size: 2rem;
+  color: var(--unyko-accent);
+  margin-bottom: 1rem;
 }
 
 .flip-card-back {
   transform: rotateY(180deg);
+  color: var(--unyko-text);
+}
+.diferenciador-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.diferenciador-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+.diferenciador-card img {
+  max-height: 120px;
+  object-fit: contain;
+}
+.diferenciador-card h5 {
+  margin-bottom: 1rem;
+}
+.diferenciador-card p {
+  font-size: 0.95rem;
+}
+
+/* Modales */
+.modal-content {
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+.modal-header {
+  background-color: var(--unyko-light);
+}
+.modal-title {
+  color: var(--unyko-primary);
+}
+ul {
+  padding-left: 1.2rem; /* espacio a la izquierda */
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+ul.text-muted li::marker {
+  color: var(--unyko-accent); /* cambia el color de la viñeta */
+}
+.elegant-modal {
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  padding: 1rem 1.5rem;
+  font-family: 'Inter', 'Poppins', sans-serif;
+  animation: fadeInModal 0.4s ease;
+}
+
+@keyframes fadeInModal {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.modal-title {
+  color: var(--unyko-primary);
+  font-size: 1.5rem;
+}
+
+.text-accent {
+  color: var(--unyko-accent);
+}
+
+.modal-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1rem;
+}
+.modal-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--unyko-text);
+  font-size: 0.95rem;
+}
+.modal-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: var(--unyko-accent);
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.modal-result-box {
+  background-color: var(--unyko-light);
+  color: var(--unyko-text);
+  font-size: 0.95rem;
+  border-left: 4px solid var(--unyko-action);
 }
