@@ -62,6 +62,14 @@ body {
 }
 
 /* Hero refinado */
+
+.hero .container {
+  max-width: 1140px; /* igual que Bootstrap XL */
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .hero {
   background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
   padding: 7rem 0 5rem;
