@@ -1,5 +1,5 @@
 :root {
-  --unyko-primary: #1F6AE1;   /* Azul principal: confianza y profesionalismo */
+  --unyko-primary: #16213e;   /* Azul principal: confianza y profesionalismo */
   --unyko-accent: #2FBF71;    /* Verde humano: cercanía y crecimiento */
   --unyko-action: #F7941D;    /* Naranjo activo: energía y agilidad */
   --unyko-dark: #0F172A;      /* Azul profundo elegante */
@@ -61,31 +61,54 @@ body {
   box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
 
-/* Hero */
+/* Hero refinado */
 .hero {
-  background: linear-gradient(135deg, var(--unyko-dark) 0%, var(--unyko-primary) 100%);
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
   padding: 7rem 0 5rem;
-  text-align: center;
-  color: var(--unyko-text-light);
+  color: #f8f9fa;
 }
+
 .hero h1 {
-  font-size: 2.8rem;
-  color: #fff;
+  font-size: 2.5rem;
+  line-height: 1.3;
+  color: #ffffff;
 }
-.hero h2 {
-  font-size: 1.75rem;
-  color: var(--unyko-text-light);
-  margin-bottom: 1rem;
+
+.hero h1 .text-accent {
+  color: #00bcd4;
 }
+
 .hero .lead {
   font-size: 1.125rem;
-  color: var(--unyko-text-light);
+  color: #e0e0e0;
 }
-.hero-cta {
-  margin-top: 2rem;
+
+.hero-cta .btn-accent {
+  background-color: #00bcd4;
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s ease;
 }
-.hero-cta .btn {
-  min-width: 180px;
+
+.hero-cta .btn-accent:hover {
+  background-color: #0097a7;
+}
+
+.hero-illustration img {
+  max-width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero .lead {
+    font-size: 1rem;
+  }
 }
 
 /* Títulos de sección */
