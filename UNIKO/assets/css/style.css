@@ -14,6 +14,7 @@ body {
   color: var(--unyko-text);
   margin: 0;
   background-color: var(--unyko-light); /* menos blanco puro */
+  overflow-x: hidden;
 }
 
 /* Navbar */
@@ -74,6 +75,9 @@ body {
   background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
   padding: 7rem 0 5rem;
   color: #f8f9fa;
+  min-height: 80vh; 
+  display: flex; 
+  align-items: center;
 }
 
 .hero h1 {
@@ -135,8 +139,6 @@ body {
 
 /* Cards */
 .feature-card,
-.service-card,
-.process-step,
 .success-card,
 .method-card {
   background: #fff;
@@ -151,8 +153,6 @@ body {
   justify-content: space-between;
 }
 .feature-card:hover,
-.service-card:hover,
-.process-step:hover,
 .success-card:hover,
 .method-card:hover {
   transform: translateY(-5px);
@@ -281,70 +281,6 @@ footer a:hover {
   margin-right: auto; 
 }
 
-/* Tarjetas giratorias */
-.flip-card {
-  background-color: transparent;
-  width: 100%;
-  height: 320px;
-  perspective: 1000px;
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.8s ease;
-  transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front,
-.flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 12px;
-  backface-visibility: hidden;
-  background: #fff;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  padding: 1.5rem;
-  text-align: center;
-}
-
-.flip-card-front .icon {
-  font-size: 2rem;
-  color: var(--unyko-accent);
-  margin-bottom: 1rem;
-}
-
-.flip-card-back {
-  transform: rotateY(180deg);
-  color: var(--unyko-text);
-}
-.diferenciador-card {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.diferenciador-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-}
-.diferenciador-card img {
-  max-height: 120px;
-  object-fit: contain;
-}
-.diferenciador-card h5 {
-  margin-bottom: 1rem;
-}
-.diferenciador-card p {
-  font-size: 0.95rem;
-}
-
 /* Modales */
 .modal-content {
   border-radius: 12px;
@@ -455,7 +391,7 @@ ul.text-muted li::marker {
 }
 #contacto .border { animation: fadeInForm 0.6s ease; } 
 @keyframes fadeInForm { from { opacity: 0; transform: translateY(20px); } to 
-{ opacity: 1; transform: translateY(0); } }#contacto-Section {
+{ opacity: 1; transform: translateY(0); } }#contacto {
   height: 70vh;
   width: 100%;
   display: flex;
@@ -486,6 +422,7 @@ footer {
 }
 footer .container {
   padding: 0px;
+  max-width: 1140px
 }
 footer p {
   margin-bottom: 0.3rem;
@@ -516,3 +453,7 @@ footer p {
 .whatsapp-float:hover {
   opacity: 0.8;
 }
+
+.hero-illustration img { 
+  max-height: 400px; 
+  object-fit: cover; }
