@@ -1,11 +1,18 @@
 :root {
-  --unyko-primary: #16213e;   /* Azul principal: confianza y profesionalismo */
-  --unyko-accent: #2FBF71;    /* Verde humano: cercanía y crecimiento */
-  --unyko-action: #F7941D;    /* Naranjo activo: energía y agilidad */
-  --unyko-dark: #0F172A;      /* Azul profundo elegante */
-  --unyko-light: #F1F5F9;     /* Gris cálido para fondos */
-  --unyko-text: #4A4A4A;      /* Gris oscuro: equilibrio y seriedad */
-  --unyko-text-light: #E6EDF3;/* Texto sobre fondo oscuro */
+  --unyko-primary: #16213e;
+  /* Azul principal: confianza y profesionalismo */
+  --unyko-accent: #2FBF71;
+  /* Verde humano: cercanía y crecimiento */
+  --unyko-action: #F7941D;
+  /* Naranjo activo: energía y agilidad */
+  --unyko-dark: #0F172A;
+  /* Azul profundo elegante */
+  --unyko-light: #F1F5F9;
+  /* Gris cálido para fondos */
+  --unyko-text: #4A4A4A;
+  /* Gris oscuro: equilibrio y seriedad */
+  --unyko-text-light: #E6EDF3;
+  /* Texto sobre fondo oscuro */
 }
 
 /* Tipografía base */
@@ -21,15 +28,18 @@ body {
 .navbar {
   background-color: var(--unyko-dark);
 }
+
 .navbar-brand {
   font-weight: 700;
   letter-spacing: 0.3px;
   color: var(--unyko-action);
 }
+
 .nav-link {
   color: var(--unyko-primary);
   font-weight: 700;
 }
+
 .nav-link:hover {
   color: var(--unyko-accent);
 }
@@ -40,14 +50,17 @@ body {
   border-radius: 8px;
   font-weight: 600;
 }
+
 .btn-outline-primary {
   border-color: var(--unyko-primary);
   color: var(--unyko-primary);
 }
+
 .btn-outline-primary:hover {
   background: var(--unyko-primary);
   color: #fff;
 }
+
 .btn-primary {
   background-color: var(--unyko-action);
   border: none;
@@ -55,10 +68,11 @@ body {
   font-weight: 600;
   transition: all 0.3s ease;
 }
+
 .btn-primary:hover {
   background-color: #e67c0f;
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
 
 /* Hero */
@@ -67,6 +81,7 @@ body {
   margin: 0 auto;
   padding: 0 1rem;
 }
+
 .hero {
   background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
   padding: 7rem 0 5rem;
@@ -75,33 +90,39 @@ body {
   display: flex;
   align-items: center;
 }
+
 .hero h1 {
   font-size: 2.5rem;
   line-height: 1.3;
   color: #ffffff;
 }
+
 .hero h1 .text-accent {
   color: #00bcd4;
 }
+
 .hero .lead {
   font-size: 1.125rem;
   color: #e0e0e0;
 }
+
 .hero-cta .btn-accent {
   background-color: #00bcd4;
   color: #fff;
   border: none;
   transition: background-color 0.3s ease;
 }
+
 .hero-cta .btn-accent:hover {
   background-color: #0097a7;
 }
+
 .hero-illustration img {
   max-width: 100%;
   max-height: 400px;
   object-fit: cover;
   border-radius: 1rem;
-  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 /* Títulos de sección */
@@ -111,6 +132,7 @@ body {
   color: var(--unyko-primary);
   margin-bottom: 1rem;
 }
+
 .section-subtitle {
   font-size: 1.1rem;
   line-height: 1.6;
@@ -134,13 +156,15 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .feature-card:hover,
 .success-card:hover,
 .method-card:hover,
 .value-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
+
 .icon {
   font-size: 2.5rem;
   color: var(--unyko-accent);
@@ -162,26 +186,32 @@ footer {
   color: var(--unyko-text-light);
   padding: 3rem 2rem;
 }
+
 footer h5 {
   color: var(--unyko-accent);
 }
+
 footer a {
   color: var(--unyko-action);
 }
+
 footer a:hover {
   color: #fff;
 }
+
 .footer-bottom {
-  border-top: 1px solid rgba(255,255,255,0.12);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
   margin-top: 2rem;
   padding-top: 1rem;
   font-size: 0.9rem;
   color: #ccc;
 }
+
 footer .container {
   padding: 0;
   max-width: 1140px;
 }
+
 footer p {
   margin-bottom: 0.3rem;
 }
@@ -193,56 +223,79 @@ footer p {
   padding: 5rem 0;
   font-family: 'Inter', 'Poppins', sans-serif;
 }
+
 #contacto .info-box {
   padding: 2rem;
   color: var(--unyko-text-light);
 }
+
 #contacto .info-box h2 {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
+
 #contacto .info-box p {
   font-size: 1.1rem;
   margin-bottom: 2rem;
   color: #dbe2e8;
 }
+
 #contacto .info-box ul {
   list-style: none;
   padding-left: 0;
   margin: 0;
 }
+
 #contacto .info-box li {
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
   font-size: 1rem;
 }
+
 #contacto .info-box i {
-  font-size: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
   background-color: var(--unyko-accent);
   color: white;
-  padding: 0.5rem;
-  border-radius: 50%;
+  border-radius: 8px;
+  /* cuadrado con bordes suaves */
   margin-right: 0.75rem;
+  flex-shrink: 0;
 }
+
 #contacto .form-box {
   background-color: #ffffff;
   border-radius: 1rem;
   padding: 2rem;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
   border: 1px solid #e9ecef;
   animation: fadeInForm 0.6s ease;
 }
+
 @keyframes fadeInForm {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+
 #contacto .form-label {
   font-weight: 600;
   color: var(--unyko-dark);
   margin-bottom: 0.5rem;
 }
+
 #contacto .form-control {
   border-radius: 10px;
   border: 1px solid #dbe2e8;
@@ -252,10 +305,12 @@ footer p {
   box-shadow: none;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
+
 #contacto .form-control:focus {
   border-color: var(--unyko-primary);
   box-shadow: 0 0 0 0.2rem rgba(22, 33, 62, 0.15);
 }
+
 #contacto .btn-primary {
   background-color: var(--unyko-action);
   border: none;
@@ -265,41 +320,87 @@ footer p {
   border-radius: 2rem;
   transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
+
 #contacto .btn-primary:hover {
   background-color: #e67c0f;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
   transform: translateY(-1px);
 }
 
 /* ===== Hero: ajuste móvil ===== */
 @media (max-width: 768px) {
   .hero {
-    min-height: auto;       /* anula el 80vh en móvil */
-    padding: 4rem 1rem;     /* reduce padding */
+    min-height: auto;
+    /* anula el 80vh en móvil */
+    padding: 4rem 1rem;
+    /* reduce padding */
     text-align: center;
   }
-  .hero-illustration { margin-top: 1.5rem; text-align: center; }
-  .hero-illustration img { max-width: 100%; height: auto; }
-  .hero h1 { font-size: 2rem; line-height: 1.3; }
-  .hero .lead { font-size: 1rem; }
+
+  .hero-illustration {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+
+  .hero-illustration img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+
+  .hero .lead {
+    font-size: 1rem;
+  }
 }
 
 /* ===== Contacto: móvil ===== */
 @media (max-width: 768px) {
-  #contacto { padding: 3rem 1rem; }
-  #contacto .info-box { padding: 1rem 0.5rem; text-align: center; }
-  #contacto .info-box h2 { font-size: 1.75rem; }
-  #contacto .info-box p { font-size: 1rem; margin-bottom: 1.5rem; }
-  #contacto .info-box ul { text-align: center; }
-  #contacto .info-box li { justify-content: center; font-size: 0.95rem; }
-  #contacto .info-box i { font-size: 1.2rem; margin-right: 0.5rem; }
+  #contacto {
+    padding: 3rem 1rem;
+  }
+
+  #contacto .info-box {
+    padding: 1rem 0.5rem;
+    text-align: center;
+  }
+
+  #contacto .info-box h2 {
+    font-size: 1.75rem;
+  }
+
+  #contacto .info-box p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  #contacto .info-box ul {
+    text-align: center;
+  }
+
+  #contacto .info-box li {
+    justify-content: center;
+    font-size: 0.95rem;
+  }
+
+  #contacto .info-box i {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+  }
 
   #contacto .form-box {
     padding: 1.5rem;
     border-radius: 1rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   }
-  #contacto .form-control { font-size: 0.95rem; padding: 0.75rem 1rem; }
+
+  #contacto .form-control {
+    font-size: 0.95rem;
+    padding: 0.75rem 1rem;
+  }
 
   #contacto .btn-primary {
     display: block;
@@ -313,32 +414,45 @@ footer p {
 /* ===== Modales ===== */
 .modal-content {
   border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
+
 .modal-header {
   background-color: var(--unyko-light);
 }
+
 .modal-title {
   color: var(--unyko-primary);
   font-size: 1.5rem;
 }
+
 .elegant-modal {
   border-radius: 16px;
-  box-shadow: 0 12px 32px rgba(0,0,0,0.15);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
   background-color: #fff;
   padding: 1rem 1.5rem;
   font-family: 'Inter', 'Poppins', sans-serif;
   animation: fadeInModal 0.4s ease;
 }
+
 @keyframes fadeInModal {
-  from { opacity: 0; transform: scale(0.95); }
-  to { opacity: 1; transform: scale(1); }
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
+
 .modal-list {
   list-style: none;
   padding-left: 0;
   margin-bottom: 1rem;
 }
+
 .modal-list li {
   position: relative;
   padding-left: 1.5rem;
@@ -346,6 +460,7 @@ footer p {
   color: var(--unyko-text);
   font-size: 0.95rem;
 }
+
 .modal-list li::before {
   content: "✔";
   position: absolute;
@@ -354,6 +469,7 @@ footer p {
   font-size: 1rem;
   line-height: 1;
 }
+
 .modal-result-box {
   background-color: var(--unyko-light);
   color: var(--unyko-text);
@@ -366,20 +482,23 @@ footer {
   background: var(--unyko-dark);
   color: var(--unyko-text-light);
 }
+
 footer .container {
   padding: 0;
   max-width: 1140px;
 }
+
 footer p {
   margin-bottom: 0.3rem;
 }
 
 /* ===== Extras ===== */
-.container-narrow { 
-  max-width: 960px; 
-  margin-left: auto; 
-  margin-right: auto; 
+.container-narrow {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
@@ -393,9 +512,10 @@ footer p {
   text-align: center;
   line-height: 55px;
   z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   transition: opacity 0.3s ease;
 }
+
 .whatsapp-float:hover {
   opacity: 0.8;
 }
