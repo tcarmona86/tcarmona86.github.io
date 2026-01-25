@@ -70,71 +70,185 @@
   </section>
 
   <!-- Beneficios -->
-  <section id="Beneficios" class="py-5 bg-white">
-    <div class="container">
+  <section id="beneficios" class="py-5 bg-light">
+    <div class="container text-center">
       <h2 class="section-title mb-4">Beneficios de Unyko</h2>
       <p class="section-subtitle mb-5">
-        Ventajas competitivas de Unyko: escalabilidad inmediata,
-        reducción de costos sostenibles e innovación tecnológica aplicada.
+        En Unyko creemos que la eficiencia no es un concepto abstracto, sino un resultado tangible.
+        Diversos estudios internacionales han demostrado que la externalización de procesos y la incorporación de
+        soluciones tecnológicas generan ahorros operativos significativos, liberando recursos para enfocarse en lo
+        estratégico. Nuestros servicios están diseñados para maximizar estos beneficios.
       </p>
-      <div class="row g-4">
-
-        <!-- Escalabilidad inmediata -->
-        <div class="col-md-3">
-          <div class="feature-card h-100">
-            <div class="feature-card">
-              <span class="icon"><i class="bi bi-graph-up-arrow"></i></span>
-              <h5 class="fw-semibold">Escalabilidad inmediata</h5>
-              <p class="mb-0">Crece de 3 a 30 personas sin fricciones.<br>Sin comprometer
-                calidad, cultura ni control.<br>Ideal para proyectos con alta demanda o expansión rápida.</p>
-            </div>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <!-- Tarjeta 1 -->
+        <div class="col">
+          <div class="feature-card h-100 p-4">
+            <div class="icon"><i class="bi bi-people-fill"></i></div>
+            <h5 class="fw-bold">Escalabilidad inmediata</h5>
+            <p class="text-muted small">Crece de 3 a 30 personas sin fricciones.<br>Sin comprometer
+              calidad, cultura ni control.<br>Ideal para proyectos con alta demanda o expansión rápida.</p>
+            <button type="button" class="btn btn-outline-primary mt-3" data-bs-toggle="modal"
+              data-bs-target="#modalEsc">
+              Ver más
+            </button>
           </div>
         </div>
 
-        <!-- Reducción de costos -->
-        <div class="col-md-3">
-          <div class="feature-card h-100">
-            <div class="feature-card">
-              <span class="icon"><i class="bi bi-cash-stack"></i></span>
-              <h5 class="fw-semibold">Reducción de costos</h5>
-              <p class="mb-0">Ahorro promedio de 25–30% en operación.<br>Menos carga fija,
-                más flexibilidad financiera.<br>Costos variables adaptados a tu realidad.</p>
-            </div>
+        <!-- Tarjeta 2 -->
+        <div class="col">
+          <div class="feature-card h-100 p-4">
+            <div class="icon"><i class="bi bi-lightning-fill"></i></div>
+            <h5 class="fw-bold">Reducción de costos</h5>
+            <p class="text-muted small">Ahorro promedio de 25–30% en operación.<br>Menos carga fija,
+              más flexibilidad financiera.<br>Costos variables adaptados a tu realidad.</p>
+            <button type="button" class="btn btn-outline-primary mt-3" data-bs-toggle="modal"
+              data-bs-target="#modalCostos">
+              Ver más
+            </button>
           </div>
         </div>
 
-        <!-- Innovación tecnológica -->
-        <div class="col-md-3">
-          <div class="feature-card h-100">
-            <div class="feature-card">
-              <span class="icon"><i class="bi bi-lightbulb"></i></span>
-              <h5 class="fw-semibold">Innovación tecnológica aplicada</h5>
-              <p class="mb-0">Procesos 2x más rápidos con automatización.<br>Automatización de procesos
-                repetitivos.<br>Analítica avanzada para decisiones ágiles.<br>Tecnología como motor de
-                competitividad.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Retención de talento -->
-        <div class="col-md-3">
-          <div class="feature-card h-100">
-            <div class="feature-card">
-              <span class="icon"><i class="bi bi-person-heart"></i></span>
-              <h5 class="fw-semibold">Retención de talento</h5>
-              <p class="mb-0">Selección alineada con tus valores.<br>Clima laboral positivo y seguimiento
-                continuo.<br>Menor rotación, mayor compromiso.</p>
-            </div>
+        <!-- Tarjeta 3 -->
+        <div class="col">
+          <div class="feature-card h-100 p-4">
+            <div class="icon"><i class="bi bi-display"></i></div>
+            <h5 class="fw-bold">Duplicación de la velocidad de procesos</h5>
+            <p class="text-muted small">Procesos 2x más rápidos con automatización.<br>Automatización de procesos
+              repetitivos.<br>Analítica avanzada para decisiones ágiles.<br>Tecnología como motor de
+              competitividad.</p>
+            <button type="button" class="btn btn-outline-primary mt-3" data-bs-toggle="modal"
+              data-bs-target="#modalDupli">
+              Ver más
+            </button>
           </div>
         </div>
 
+        <!-- Tarjeta 4 -->
+        <div class="col">
+          <div class="feature-card h-100 p-4">
+            <div class="icon"><i class="bi bi-gear-fill"></i></div>
+            <h5 class="fw-bold">Optimización de recursos compartidos</h5>
+            <p class="text-muted small">Selección alineada con tus valores.<br>Clima laboral positivo y seguimiento
+              continuo.<br>Menor rotación, mayor compromiso.</p>
+            <button type="button" class="btn btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#modalOp">
+              Ver más
+            </button>
+          </div>
+        </div>
       </div>
     </div>
+
+    <!-- Modales -->
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="modalEsc" tabindex="-1" aria-labelledby="modalEscLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content elegant-modal">
+          <div class="modal-header border-0 text-start">
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-lightning-fill fs-4 text-accent"></i>
+              <h5 class="modal-title fw-bold mb-0" id="modalEscLabel">Escalabilidad inmediata</h5>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body text-start">
+            <p>La escalabilidad inmediata permite ampliar tu equipo de manera ágil, pasando de 3 a 30 personas sin
+              fricciones. Este modelo asegura que el crecimiento no comprometa la calidad, la cultura
+              organizacional ni el control de los procesos. Es la solución ideal para proyectos con alta demanda
+              o expansión rápida, garantizando continuidad y eficiencia en cada etapa.</p>
+          </div>
+          <div class="modal-footer border-0 justify-content-end">
+            <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 2 -->
+    <div class="modal fade" id="modalCostos" tabindex="-1" aria-labelledby="modalCostosLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content elegant-modal">
+          <div class="modal-header border-0 text-start">
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-lightning-fill fs-4 text-accent"></i>
+              <h5 class="modal-title fw-bold mb-0" id="modalCostosLabel">Reducción de costos</h5>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body text-start">
+            <p>Según el Global Shared Services and Outsourcing Survey 2023 de Deloitte, las organizaciones que
+              externalizan procesos logran ahorros operativos en este rango.</p>
+            <!-- Enlace clicable -->
+            <a href="https://www.deloitte.com/de/de/services/consulting-financial/research/global-shared-services-and-outsourcing-survey.html"
+              target="_blank" class="btn btn-outline-primary"> Ver estudio completo en Deloitte </a>
+          </div>
+          <div class="modal-footer border-0 justify-content-end">
+            <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+        <div class="modal-footer border-0 justify-content-end">
+          <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- Modal 3 -->
+    <div class="modal fade" id="modalDupli" tabindex="-1" aria-labelledby="modalDupliLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content elegant-modal">
+          <div class="modal-header border-0 text-start">
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-lightning-fill fs-4 text-accent"></i>
+              <h5 class="modal-title fw-bold mb-0" id="modalDupliLabel">Duplicación de la velocidad de procesos con
+                automatización</h5>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body text-start">
+            <p> McKinsey, en su estudio "The State of AI 2025: How organizations are rewiring to capture value",
+              confirma que la automatización inteligente y la adopción de IA generativa están transformando la
+              eficiencia organizacional a escala. </p>
+            <!-- Enlace clicable -->
+            <a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-how-organizations-are-rewiring-to-capture-value"
+              target="_blank" class="btn btn-outline-primary"> Ver estudio completo en Deloitte </a>
+          </div>
+          <div class="modal-footer border-0 justify-content-end">
+            <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 4 -->
+    <div class="modal fade" id="modalOp" tabindex="-1" aria-labelledby="modalOpLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content elegant-modal">
+          <div class="modal-header border-0 text-start">
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-lightning-fill fs-4 text-accent"></i>
+              <h5 class="modal-title fw-bold mb-0" id="modalOpLabel">Optimización de recursos compartidos</h5>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body text-start">
+            <p> PwC destaca que los modelos de outsourcing y servicios compartidos permiten mejorar la asignación de
+              recursos y reducir gastos generales. </p>
+            <!-- Enlace clicable -->
+            <a href="https://www.pwc.com/gx/en/services/consulting/global-business-services.html" target="_blank"
+              class="btn btn-outline-primary"> Ver estudio completo en Deloitte </a>
+          </div>
+          <div class="modal-footer border-0 justify-content-end">
+            <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </section>
+
 
   <!-- Metodología -->
   <section id="metodologia" class="py-5 bg-light">
     <div class="container">
-      <h2 class="section-title mb-4">Metodología (Cómo trabajamos)</h2>
+      <h2 class="section-title mb-4">Metodología Unyko</h2>
       <p class="section-subtitle mb-5">
         En Unyko creemos que la forma de trabajar es tan importante como los resultados.
         Nuestro proceso combina análisis profundo de necesidades, planificación estratégica personalizada y ejecución
@@ -183,58 +297,6 @@
     </div>
   </section>
 
-  <!-- Casos de Éxito -->
-  <section id="casos-exito" class="py-5 bg-white">
-    <div class="container text-center">
-      <h2 class="section-title mb-4">Casos de Éxito</h2>
-      <p class="section-subtitle mb-5">
-        Ejemplos concretos de proyectos y resultados tangibles que validan nuestra propuesta y generan confianza.
-      </p>
-
-      <div class="row g-4 justify-content-center">
-        <!-- Caso 1 -->
-        <div class="col-md-4">
-          <div class="success-card p-4 h-100 shadow-sm rounded">
-            <i class="bi bi-building-check icon mb-3"></i>
-            <h5 class="fw-bold">Banco Regional</h5>
-            <p class="text-muted small">
-              Implementamos células ágiles para proyectos digitales críticos.
-            </p>
-            <p><strong>Resultado:</strong> reducción del tiempo de entrega en un 40% y mayor satisfacción del cliente.
-            </p>
-          </div>
-        </div>
-
-        <!-- Caso 2 -->
-        <div class="col-md-4">
-          <div class="success-card p-4 h-100 shadow-sm rounded">
-            <i class="bi bi-graph-up-arrow icon mb-3"></i>
-            <h5 class="fw-bold">Retail Internacional</h5>
-            <p class="text-muted small">
-              Subcontratación de talento TI y soporte Back Office.
-            </p>
-            <p><strong>Resultado:</strong> escalamiento de 5 a 25 personas en semanas y ahorro del 30% en costos
-              operativos.</p>
-          </div>
-        </div>
-
-        <!-- Caso 3 -->
-        <div class="col-md-4">
-          <div class="success-card p-4 h-100 shadow-sm rounded">
-            <i class="bi bi-lightbulb icon mb-3"></i>
-            <h5 class="fw-bold">Startup Tecnológica</h5>
-            <p class="text-muted small">
-              Desarrollo de plataforma digital con metodologías ágiles.
-            </p>
-            <p><strong>Resultado:</strong> lanzamiento exitoso en 3 meses y captación de 10.000 usuarios en el primer
-              trimestre.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
   <!-- Visión de Futuro -->
   <section id="vision-futuro" class="py-5 bg-white">
     <div class="container">
@@ -253,26 +315,32 @@
             <li class="mb-3">
               <i class="bi bi-lightbulb text-primary me-2"></i>
               <strong>Innovación constante:</strong> Nos comprometemos a evolucionar junto a nuestros clientes,
-              anticipando
-              cambios de mercado y transformando desafíos en oportunidades. Apostamos por la integración de nuevas
+              anticipando cambios de mercado y transformando desafíos en oportunidades. Apostamos por la integración de
+              nuevas
               tecnologías,
               metodologías ágiles.
+              <br>
+              Implementamos soluciones de inteligencia artificial para automatizar procesos repetitivos y potenciar la
+              analítica avanzada, permitiendo decisiones más rápidas y precisas.
             </li>
             <li class="mb-3">
               <i class="bi bi-arrow-repeat text-primary me-2"></i>
               <strong>Adaptación al cambio:</strong> Modelos de trabajo flexibles que permitan escalar operaciones sin
-              fricciones y mantener
-              siempre el control.
+              fricciones y mantener siempre el control.
+              <br> Incorporamos prácticas de compliance digital que aseguran el cumplimiento normativo en entornos
+              cambiantes,
+              protegiendo la reputación y la confianza de nuestros clientes.
             </li>
             <li class="mb-3">
               <i class="bi bi-shield-check text-primary me-2"></i>
               <strong>Sostenibilidad operativa:</strong>parte esencial de nuestra estrategia: diseñamos soluciones que
-              funcionan
-              hoy y siguen funcionando mañana, con procesos eficientes, equipos motivados y una cultura de mejora
-              continua.
-              Así aseguramos que cada paso dado no solo resuelva el presente, sino que prepare el camino para un
-              crecimiento
-              sólido y responsable.
+              funcionan hoy y siguen funcionando mañana, con procesos eficientes, equipos motivados y una cultura de
+              mejora
+              continua. Así aseguramos que cada paso dado no solo resuelva el presente, sino que prepare el camino para
+              un
+              crecimiento sólido y responsable.
+              <br>Desarrollamos iniciativas de sostenibilidad tecnológica, optimizando el uso de recursos compartidos y
+              promoviendo operaciones con menor huella ambiental.
             </li>
           </ul>
 
@@ -296,10 +364,11 @@
     <div class="container">
       <div class="row g-4 align-items-start">
         <div class="col-12 col-md-5 info-box">
-          <h2 class="fw-bold mb-3 text-light">Contáctenos</h2>
-          <p class="text-light-50">¿Listos para avanzar juntos? Completa el formulario o escríbenos directamente.</p>
+          <h2 class="section-title text-center">Construyamos el futuro juntos</h2>
+          <p class="section-subtitle text-center">
+            Estamos listos para acompañarte en tu transformación. Completa el formulario y avancemos juntos. </p>
           <ul class="list-unstyled">
-            <li class="mb-3 d-flex align-items-center"><i class="bi bi-telephone-fill"></i> <span>+56 9 1234 5678</span>
+            <li class="mb-3 d-flex align-items-center"><i class="bi bi-telephone-fill"></i> <span>+56 9 7210 2270</span>
             </li>
             <li class="mb-3 d-flex align-items-center"><i class="bi bi-envelope-fill"></i> <span>hola@unyko.cl</span>
             </li>
@@ -340,7 +409,7 @@
     </div>
   </section>
   <!-- Botón flotante de WhatsApp -->
-  <a href="https://wa.me/56944400394?text=Buenas%20tardes,%20necesito%20mas%20informacion" class="whatsapp-float"
+  <a href="https://wa.me/+56972102270?text=Buenas%20tardes,%20necesito%20mas%20informacion" class="whatsapp-float"
     target="_blank" aria-label="WhatsApp"> <i class="bi bi-whatsapp"></i>
   </a>
 

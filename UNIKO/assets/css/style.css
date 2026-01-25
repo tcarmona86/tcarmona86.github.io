@@ -513,3 +513,19 @@ footer p {
 .whatsapp-float:hover {
   opacity: 0.8;
 }
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--unyko-action);
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--unyko-text);
+  margin-bottom: 2rem;
+  text-align: center;
+}
