@@ -15,24 +15,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $mail = new PHPMailer(true);
 
   try {
-    // 🔐 Configuración SMTP para Gmail
-    $mail->isSMTP();
-    $mail->Host = 'smtp.gmail.com';
-    $mail->SMTPAuth = true;
-    $mail->Username = 'tcarmona86@gmail.com'; // tu correo Gmail
-    $mail->Password = 'Hikari@2024'; // contraseña de aplicación
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-    $mail->Port = 587;
+    // 🔐 Configuración SMTP Ferozo
+    $mail->isSMTP(); 
+    $mail->Host = 'c2701701.ferozo.com'; 
+    $mail->SMTPAuth = true; 
+    $mail->Username = 'hola@unyko.cl'; 
+    $mail->Password = 'Hol@2026'; 
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; 
+    $mail->Port = 465;
 
     // 📬 Configuración del correo
-    $mail->setFrom('tcarmona86@gmail.com', 'Unyko | Consulta desde el sitio');
-    $mail->addAddress('tcarmona86@unyko.cl'); // destinatario
-    $mail->addReplyTo($correo, $nombre);
+    $mail->setFrom('hola@unyko.cl', 'Unyko | Consulta desde el sitio');
+    $mail->addAddress('hola@unyko.cl'); // destinatario
+
+    // Reply-To validado (solo aquí)
+    if (!empty($correo) && filter_var($correo, FILTER_VALIDATE_EMAIL)) { 
+      $mail->addReplyTo($correo, $nombre); 
+    } else { 
+      $mail->addReplyTo('hola@unyko.cl', 'Unyko'); 
+    }
 
     $mail->isHTML(true);
     $mail->Subject = "Nuevo mensaje de contacto de $nombre";
     $mail->Body = "
-      <h2>Nuevo mensaje desde unyko.cl</h2>
+      <h2>Nuevo mensaje desde Unyko.cl</h2>
       <p><strong>Nombre:</strong> {$nombre}</p>
       <p><strong>Correo:</strong> {$correo}</p>
       <p><strong>Teléfono:</strong> {$telefono}</p>

@@ -1,11 +1,18 @@
 :root {
-  --unyko-primary: #0A3D62;       /* Azul profundo: títulos, encabezados, logo */
-  --unyko-accent: #1ABC9C;        /* Verde esmeralda: botones, íconos de innovación */
-  --unyko-action: #E67E22;        /* Naranja suave: llamadas a la acción */
-  --unyko-dark: #2C3E50;          /* Gris oscuro: texto principal, elegancia */
-  --unyko-light: #F4F6F7;         /* Gris claro: fondo neutro */
-  --unyko-text: #2C3E50;          /* Texto principal */
-  --unyko-text-light: #F4F6F7;    /* Texto sobre fondo oscuro */
+  --unyko-primary: #0A3D62;
+  /* Azul profundo: títulos, encabezados, logo */
+  --unyko-accent: #1ABC9C;
+  /* Verde esmeralda: botones, íconos de innovación */
+  --unyko-action: #E67E22;
+  /* Naranja suave: llamadas a la acción */
+  --unyko-dark: #2C3E50;
+  /* Gris oscuro: texto principal, elegancia */
+  --unyko-light: #F4F6F7;
+  /* Gris claro: fondo neutro */
+  --unyko-text: #2C3E50;
+  /* Texto principal */
+  --unyko-text-light: #F4F6F7;
+  /* Texto sobre fondo oscuro */
 }
 
 /* Tipografía base */
@@ -528,4 +535,8 @@ footer p {
   color: var(--unyko-text);
   margin-bottom: 2rem;
   text-align: center;
+}
+
+#mensaje-exito {
+  display: none;
 }
