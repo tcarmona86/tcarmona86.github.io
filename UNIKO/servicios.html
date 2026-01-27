@@ -55,7 +55,8 @@
             avance con eficiencia, control y visión de futuro.
           </p>
           <div class="hero-cta d-flex flex-wrap gap-3">
-            <a href="#contacto" class="btn btn-accent btn-lg rounded-pill px-4">Solicita un diagnóstico inicial sin costo</a>
+            <a href="#contacto" class="btn btn-accent btn-lg rounded-pill px-4">Solicita un diagnóstico inicial sin
+              costo</a>
           </div>
         </div>
 
@@ -260,7 +261,7 @@
 
   </section>
 
- 
+
   <!-- Sección de Contacto -->
   <section id="contacto" class="py-5">
     <div class="container">
@@ -280,7 +281,7 @@
         </div>
         <div class="col-12 col-md-7">
           <div class="p-4 rounded-4 shadow-sm bg-light border">
-            <form aria-label="Formulario de contacto">
+            <form aria-label="Formulario de contacto" id="formulario-contacto" action="enviar.php" method="POST">
               <div class="mb-3">
                 <label for="nombre" class="form-label fw-semibold">Nombre completo</label>
                 <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" autocomplete="name" />
@@ -302,7 +303,9 @@
               </div>
               <div class="d-grid">
                 <button type="submit" class="btn btn-primary btn-lg rounded-pill">Avancemos juntos</button>
-              </div>
+                <div id="mensaje-exito" class="alert alert-success mt-3">
+                  ¡Gracias! Tu mensaje fue enviado correctamente.
+                </div>
             </form>
           </div>
         </div>

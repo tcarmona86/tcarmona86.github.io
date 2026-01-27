@@ -183,7 +183,6 @@
   </section>
 
 
-
   <!-- Sección de Contacto -->
   <section id="contacto" class="py-5">
     <div class="container">
@@ -203,7 +202,7 @@
         </div>
         <div class="col-12 col-md-7">
           <div class="p-4 rounded-4 shadow-sm bg-light border">
-            <form aria-label="Formulario de contacto">
+            <form aria-label="Formulario de contacto" id="formulario-contacto" action="enviar.php" method="POST">
               <div class="mb-3">
                 <label for="nombre" class="form-label fw-semibold">Nombre completo</label>
                 <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" autocomplete="name" />
@@ -225,7 +224,9 @@
               </div>
               <div class="d-grid">
                 <button type="submit" class="btn btn-primary btn-lg rounded-pill">Avancemos juntos</button>
-              </div>
+                <div id="mensaje-exito" class="alert alert-success mt-3">
+                  ¡Gracias! Tu mensaje fue enviado correctamente.
+                </div>
             </form>
           </div>
         </div>
@@ -233,6 +234,7 @@
       </div>
     </div>
   </section>
+
   <!-- Botón flotante de WhatsApp -->
   <a href="https://wa.me/+56972102270?text=Hola%20Unyko,%20quiero%20conocer%20c%C3%B3mo%20pueden%20ayudarme%E2%80%A6"
     class="whatsapp-float" target="_blank" aria-label="WhatsApp">
