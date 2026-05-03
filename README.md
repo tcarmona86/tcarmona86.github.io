@@ -7,6 +7,9 @@
 <h2>Talleres</h2>
 
 
+<p>Taller Like Me, es una pagina en la cual se agregan peliculas con su imagen y descripción</p>
+<p>https://github.com/tcarmona86/tcarmona86.github.io/tree/main/Like%20Me</p>
+
 <p>Taller Mi Repertorio </p>
 <p>https://github.com/tcarmona86/tcarmona86.github.io/tree/main/Mi_repertorio</p>
 
