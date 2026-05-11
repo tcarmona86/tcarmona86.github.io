@@ -10,6 +10,7 @@ function App() {
   const [imgSrc, setImgSRC] = useState("");
   const [descripcion, setDescripcion] = useState("");
   const [posts, setPosts] = useState([]);
+  const [mensaje, setMensaje] = useState(""); // nuevo estado para mensajes
 
   const getPosts = async () => {
     try {
@@ -30,8 +31,14 @@ function App() {
       setTitulo("");
       setImgSRC("");
       setDescripcion("");
+
+      // mostrar mensaje
+      setMensaje("✅ Post agregado con éxito");
+      setTimeout(() => setMensaje(""), 3000);
     } catch (error) {
       console.error("Error al agregar post:", error);
+      setMensaje("❌ Error al agregar el post");
+      setTimeout(() => setMensaje(""), 3000);
     }
   };
 
@@ -48,8 +55,14 @@ function App() {
     try {
       await axios.delete(`${urlBaseServer}/posts/${id}`);
       getPosts();
+
+      // mostrar mensaje
+      setMensaje("🗑️ Post eliminado correctamente");
+      setTimeout(() => setMensaje(""), 3000);
     } catch (error) {
       console.error("Error al eliminar post:", error);
+      setMensaje("❌ Error al eliminar el post");
+      setTimeout(() => setMensaje(""), 3000);
     }
   };
 
@@ -60,6 +73,14 @@ function App() {
   return (
     <div className="App">
       <h2 className="py-5 text-center">&#128248; Like Me &#128248;</h2>
+
+      {/* Mensaje visual */}
+      {mensaje && (
+        <div className="alert alert-info text-center" role="alert">
+          {mensaje}
+        </div>
+      )}
+
       <div className="row m-auto px-5">
         <div className="col-12 col-sm-4">
           <Form
