@@ -1,0 +1,11 @@
+[2026-05-18T02:18:05.657Z] Método: GET - Ruta: /joyas/filtros?precio_min=25000&precio_max=30000&categoria=aros&metal=plata
+[2026-05-18T02:18:34.224Z] Método: GET - Ruta: /joyas/filtros?metal=plata
+[2026-05-18T02:18:40.517Z] Método: GET - Ruta: /joyas/filtros?categoria=aros
+[2026-05-18T02:18:46.268Z] Método: GET - Ruta: /joyas/filtros?precio_min=25000
+[2026-05-18T02:18:54.574Z] Método: GET - Ruta: /joyas/filtros?precio_max=20000
+[2026-05-18T02:19:03.468Z] Método: GET - Ruta: /joyas?limits=3&page=1&order_by=stock_ASC
+[2026-05-18T02:19:11.740Z] Método: GET - Ruta: /joyas?limits=2
+[2026-05-18T02:19:22.713Z] Método: GET - Ruta: /joyas?limits=3&page=1&order_by=stock_ASC
+[2026-05-18T02:19:28.116Z] Método: GET - Ruta: /joyas?limits=3&page=2&order_by=stock_ASC
+[2026-05-18T02:28:48.936Z] Método: GET - Ruta: /joyas?limits=3&page=3&order_by=stock_ASC
+[2026-05-18T02:28:56.547Z] Método: GET - Ruta: /joyas?limits=2&page=3&order_by=stock_ASC
