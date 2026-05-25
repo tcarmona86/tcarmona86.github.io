@@ -6,6 +6,9 @@
 
 <h2>Talleres</h2>
 
+<p>Taller Tienda de Joyas</p>
+<p>https://github.com/tcarmona86/tcarmona86.github.io</p>
+
 <p>Taller segunda parte Like Me incluyendo funcionalidad para agregar Like y Eliminar Post</p>
 <p>https://github.com/tcarmona86/tcarmona86.github.io/tree/main/Like%20Me%202%C2%B0%20Parte</p>
 
