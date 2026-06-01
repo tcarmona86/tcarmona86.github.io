@@ -6,6 +6,9 @@
 
 <h2>Talleres</h2>
 
+<p>Taller Soft Jobs </p>
+<p>https://github.com/tcarmona86/tcarmona86.github.io/tree/main/SoftJobs</p>
+
 <p>Taller Tienda de Joyas</p>
 <p>https://github.com/tcarmona86/tcarmona86.github.io</p>
 
