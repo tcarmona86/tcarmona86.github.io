@@ -1,0 +1,176 @@
+/* ==========================================================================
+   custom.css
+   Capa de personalización sobre Bootstrap. Se importa DESPUÉS de
+   "bootstrap/dist/css/bootstrap.min.css" en index.js para poder
+   sobreescribir sus clases.
+   Paleta inspirada en el wireframe: fondo rosado/lila muy claro para
+   header y categorías, grises neutros para superficies, acento violeta.
+   ========================================================================== */
+
+:root {
+  --mkt-primary: #6c5ce7;       /* violeta - acento principal (CTA, links activos) */
+  --mkt-primary-dark: #5546c8;
+  --mkt-bg-soft: #fdf2f4;       /* rosado muy claro - header / banda de categorías */
+  --mkt-surface: #f4f4f6;       /* gris claro - tarjetas, fondos secundarios */
+  --mkt-border: #e3e1e8;
+  --mkt-text: #2d2d34;
+  --mkt-text-muted: #6b6b76;
+  --mkt-radius: 0.75rem;
+}
+
+body {
+  background-color: #ffffff;
+  color: var(--mkt-text);
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* ---------- Header / Navbar ---------- */
+.mkt-navbar {
+  background-color: var(--mkt-bg-soft) !important;
+  border-bottom: 1px solid var(--mkt-border);
+  padding-block: 0.6rem;
+}
+
+.mkt-navbar .navbar-brand {
+  font-weight: 700;
+  color: var(--mkt-primary);
+}
+
+.mkt-search-form {
+  flex: 1 1 auto;
+  max-width: 600px;
+}
+
+.mkt-search-input {
+  border-radius: 999px 0 0 999px !important;
+  border-right: none;
+  background-color: #ffffff;
+}
+
+.mkt-search-btn {
+  border-radius: 0 999px 999px 0 !important;
+  background-color: #ffffff;
+  border: 1px solid #ced4da;
+  border-left: none;
+  color: var(--mkt-text-muted);
+}
+
+.mkt-sell-btn {
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.mkt-icon-btn {
+  color: var(--mkt-text);
+  font-size: 1.3rem;
+  position: relative;
+}
+
+.mkt-cart-badge {
+  position: absolute;
+  top: -4px;
+  right: -8px;
+  font-size: 0.6rem;
+}
+
+/* ---------- Banner ---------- */
+.mkt-banner {
+  background: linear-gradient(135deg, var(--mkt-primary) 0%, #a29bfe 100%);
+  color: #fff;
+  border-radius: var(--mkt-radius);
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+}
+
+/* ---------- Categorías ---------- */
+.mkt-categories-band {
+  background-color: var(--mkt-bg-soft);
+  padding-block: 1.5rem;
+}
+
+.mkt-category-circle {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background-color: #4a4a52;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.75rem;
+  padding: 0.4rem;
+  margin-inline: auto;
+  transition: transform 0.15s ease, background-color 0.15s ease;
+  cursor: pointer;
+}
+
+.mkt-category-circle:hover {
+  transform: translateY(-3px);
+  background-color: var(--mkt-primary);
+}
+
+/* ---------- Tarjetas de Producto ---------- */
+.mkt-product-card {
+  border: 1px solid var(--mkt-border) !important;
+  border-radius: var(--mkt-radius) !important;
+  overflow: hidden;
+  height: 100%;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.mkt-product-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.mkt-product-card .card-img-wrapper {
+  background-color: var(--mkt-surface);
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mkt-product-card .card-img-top {
+  object-fit: contain;
+  max-height: 100%;
+  width: 100%;
+}
+
+.mkt-product-price {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--mkt-text);
+}
+
+.mkt-product-title {
+  font-size: 0.9rem;
+  color: var(--mkt-text-muted);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 2.6em;
+}
+
+/* ---------- Footer ---------- */
+.mkt-footer {
+  background-color: var(--mkt-surface);
+  border-top: 1px solid var(--mkt-border);
+  color: var(--mkt-text-muted);
+  font-size: 0.85rem;
+}
+
+/* ---------- Utilidades responsive ---------- */
+@media (max-width: 576px) {
+  .mkt-category-circle {
+    width: 64px;
+    height: 64px;
+    font-size: 0.65rem;
+  }
+  .mkt-banner {
+    min-height: 120px;
+  }
+}
